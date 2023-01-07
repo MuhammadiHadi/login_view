@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_view/splash_view.dart';
 
 import 'login_view.dart';
 
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         primarySwatch: Colors.blue,
       ),
-      home: LoginView(),
+      home: SplashView(),
     );
   }
 }
