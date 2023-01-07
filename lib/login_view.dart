@@ -28,28 +28,40 @@ class _LoginViewState extends State<LoginView> {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30),
-              child: TextField(
-                decoration: InputDecoration(
-                    filled: true,
-                    isDense: true,
-                    fillColor: Colors.white30,
-                    hintText: "Enter Email",
-                    hintStyle: TextStyle(color: Colors.black, fontSize: 24),
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20))),
+              child: SizedBox(
+                height: 45,
+                child: TextField(
+                  decoration: InputDecoration(
+                      filled: true,
+                      isDense: true,
+                      contentPadding: EdgeInsets.all(15),
+                      fillColor: Colors.white30,
+                      hintText: "Enter Email",
+                      hintStyle: TextStyle(
+                        color: Colors.black,
+                      ),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20))),
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-              child: TextField(
-                decoration: InputDecoration(
-                    filled: true,
-                    isDense: true,
-                    fillColor: Colors.white30,
-                    hintText: "Password",
-                    hintStyle: TextStyle(color: Colors.black, fontSize: 24),
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20))),
+              child: SizedBox(
+                height: 45,
+                child: TextField(
+                  decoration: InputDecoration(
+                      filled: true,
+                      isDense: true,
+                      contentPadding: EdgeInsets.all(15),
+                      fillColor: Colors.white30,
+                      hintText: "Password",
+                      hintStyle: TextStyle(
+                        color: Colors.black,
+                      ),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20))),
+                ),
               ),
             ),
             SizedBox(

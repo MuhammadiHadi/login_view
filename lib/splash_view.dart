@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:login_view/home_view.dart';
+import 'package:login_view/login_view.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({Key? key}) : super(key: key);
@@ -14,7 +15,8 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     Timer(Duration(seconds: 3), () {
-      Navigator.of(context).push(MaterialPageRoute(builder: (_) => HomeView()));
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (_) => LoginView()));
     });
     // TODO: implement initState
     super.initState();
